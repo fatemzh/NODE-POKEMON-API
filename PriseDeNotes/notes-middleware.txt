@@ -1,0 +1,27 @@
+
+1. Installer le middleware via le terminal 
+2. Importer le middleware
+3. Utiliser le middleware avec la fonction .use()
+4. Ne pas oublier d'utiliser next() pour signifier la fin du middleware et le passage
+à un autre middleware 
+
+
+//Faire attention à l'ordre d'appel des middleware
+
+EXEMPLE:
+// création middleware: affiche url des requêtes entrantes
+
+// const logger = (req, res, next) => {
+//     console.log(`URL: ${req.url}`)
+//     next()
+// }
+
+// app.use(logger)
+
+//Version optimisé 
+// app.use((req, res, next) => {
+//     console.log(`URL: ${req.url}`)
+//     next()
+// })
+
+// Version morgan -> installation terminal npm install morgan --save-dev

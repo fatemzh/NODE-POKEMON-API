@@ -1,8 +1,14 @@
 const express = require('express')
+const morgan = require('morgan')
+const favicon = require('serve-favicon')
 let pokemons = require('./mock-pokemon')
 const {success} = require('./helper')
 const app = express()
 const port = 3000
+
+
+app.use(favicon(__dirname + '/favicon.ico'))
+    .use(morgan('dev'))
 
 app.get('/', (req, res) => res.send('Hello, world 2'))
 
