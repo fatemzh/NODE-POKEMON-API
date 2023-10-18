@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
           max: {args: [25], message: "Le nom ne peut contenir plus de 25 lettres."}
         }
       },
-      hp: {
+      hp: { 
         type: DataTypes.INTEGER,
         allowNull: false, 
         validate: {
