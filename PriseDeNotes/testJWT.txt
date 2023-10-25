@@ -1,0 +1,27 @@
+
+
+1 Créer une nouvelle requête sur Insomnia. Placer sur POST, entrer l'adresse suivante : « http://localhost:3000/api/login ». Puis dans l'onglet Body, appuyez sur la toute petite flèche de déroulement et selectionner JSON. Entrer l'objet suivant : {"username": "pikachu", "password": "pikachu" } Rien dans les autres champs !
+
+
+
+2 Envoyez le tout. Insomnia devrait renvoyer un JSON avec la propriété « token » quelquepart. Copiez-là sans les guillemets
+
+
+
+3 DANS LA MEME REQUETE !!!!! N'EN CREEZ PAS UNE NOUVELLE !
+
+Changer le POST en GET et placer l'adresse « http://localhost:3000/api/pokemons »
+
+
+
+4 Enlever les informations dans tout les champs pour ne garder que l'onglet « Headers ».
+
+remplissez le premier champs avec « Authorization ».
+
+Le second avec « Bearer $2b$10$YYad40jLnWR5vkdfzCO6Akpgnkn5VMoT9rfjzIXHA/Ujnp7hAe »
+
+Entendons par là : Bearer , espace , votre jeton/token JWT
+
+
+
+et envoyez
