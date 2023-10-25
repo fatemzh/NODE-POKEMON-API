@@ -69,8 +69,9 @@ module.exports = (sequelize, DataTypes) => {
             })
           }
         },
-        get(){
-          return this.getDataValue('types').split(',')
+        get() {
+          const types = this.getDataValue('types');
+          return types ? types.split(',') : [];
         },
         set(types){
           this.setDataValue('types', types.join())
