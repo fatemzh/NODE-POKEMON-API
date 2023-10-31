@@ -1,18 +1,27 @@
+// Importation du modèle Pokemon depuis la configuration Sequelize
 const { Pokemon } = require('../db/sequelize')
+
+// Importation du middleware d'authentification
 const auth = require('../auth/auth')
 
+// Exportation d'une fonction qui prend en paramètre l'application Express
 module.exports = (app) => {
+  // Définition d'une route GET pour récupérer un Pokémon par son identifiant
   app.get('/api/pokemons/:id', auth, (req, res) => {
+    // Recherche du Pokémon par son identifiant
     Pokemon.findByPk(req.params.id)
       .then(pokemon => {
+        // Si le Pokémon n'est pas trouvé, renvoie un message d'erreur
         if(pokemon === null){
           const message = "Le pokémon demandé n'existe pas, veuillez réessayer avec un autre identifiant."
           return res.status(404).json({message})
         }
+        // Si le Pokémon est trouvé, renvoie un message de succès
         const message = 'Un pokémon a bien été trouvé.'
         res.json({ message, data: pokemon })   
       })
       .catch(error => {
+        // Gestion des erreurs lors de la recherche
         const message = "Le pokémon n'a pas pu être récupéré. Réessayer dans quelques instants."
         res.status(500).json({message, data:error})
       })

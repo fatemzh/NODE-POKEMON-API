@@ -1,8 +1,9 @@
-/* L’API Rest et la Base de données : Créer un modèle Sequelize */
-
+// Liste des types de Pokémon valides
 const validTypes = ['Plante', 'Poison', 'Feu', 'Eau', 'Insecte', 'Vol', 'Normal', 'Electrik', 'Fée']
 
+// Exportation du modèle Sequelize pour les Pokémons
 module.exports = (sequelize, DataTypes) => {
+    // La fonction "define" de Sequelize permet de définir un modèle
     return sequelize.define('Pokemon', {
       id: {
         type: DataTypes.INTEGER,
@@ -69,10 +70,12 @@ module.exports = (sequelize, DataTypes) => {
             })
           }
         },
+        // Getter pour récupérer les types sous forme de tableau
         get() {
           const types = this.getDataValue('types');
           return types ? types.split(',') : [];
         },
+        // Setter pour définir les types sous forme de chaîne de caractères
         set(types){
           this.setDataValue('types', types.join())
         }
