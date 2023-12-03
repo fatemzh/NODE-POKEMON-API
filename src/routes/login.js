@@ -37,7 +37,7 @@ module.exports = (app) => {
         const token = jwt.sign(
             {userId : user.id},
             privateKey,
-            {expiresIn: '1000h'}
+            {expiresIn: '24h'}
         )
 
         // Renvoie un message de succès avec le token JWT
