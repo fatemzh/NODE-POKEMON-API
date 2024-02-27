@@ -54,10 +54,10 @@ This project is a REST API enabling users to fetch information about Pokémon, a
 
 ## Features  
 
-Login: User authentication to access specific functionalities.
-Adding, deleting and Modifying Pokémon: Allows users to insert, and delete new Pokémon into the database and update existing Pokémon data.
-Individual Pokémon Search: Facilitates detailed searches for specific Pokémon.  
-Display all the pokemons of the database
+Login: User authentication to access specific functionalities.  
+Adding, deleting and Modifying Pokémon: Allows users to insert, and delete new Pokémon into the database and update existing Pokémon data.  
+Individual Pokémon Search: Facilitates detailed searches for specific Pokémon.   
+Display all the pokemons of the database  
 
 
 ## 🛠 Getting Started  
