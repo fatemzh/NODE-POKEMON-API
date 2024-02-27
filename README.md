@@ -2,7 +2,7 @@
 
 # API REST Pokémon avec Node.js 🚀  
 
-Bienvenue sur le dépôt de mon projet d'API REST sur le thème des Pokémon ! Ce projet a été réalisé comme une initiation à JavaScript et Node.js, guidé par le tutoriel de Simon Dieny sur Udemy. L'objectif était de créer une API RESTful pour explorer, ajouter, modifier, et supprimer des données Pokémon, offrant ainsi une base solide pour comprendre les principes de développement backend avec Node.js.  
+Bienvenue sur le dépôt de mon projet d'API REST sur le thème des Pokémon ! Ce projet a été réalisé comme une initiation à JavaScript et Node.js, guidé par le tutoriel de Simon Dieny sur Udemy. L'objectif principal a été de créer une API RESTful pour explorer, ajouter, modifier, et supprimer des données Pokémon, offrant ainsi une base solide pour comprendre les principes de développement backend avec Node.js.  
 
 
 ## 📖 Description du Projet  
@@ -12,10 +12,10 @@ Ce projet est une API REST qui permet aux utilisateurs de récupérer des inform
 
 ## Fonctionnalités  
 
-Login : Authentification des utilisateurs pour accéder à certaines fonctionnalités.
-Ajout et modification de Pokémon : Permet aux utilisateurs d'ajouter de nouveaux Pokémon à la base de données et de modifier les données des Pokémon existants.
+Login : Authentification des utilisateurs pour accéder aux fonctionnalités.
+Ajout, modification et suppression de Pokémon 
 Recherche individuelle de Pokémon : Offre la possibilité de rechercher des informations détaillées sur un Pokémon spécifique.  
-
+Affichage de tous les pokémon 
 
 ## 🛠 Prise en Main
 Pour démarrer avec ce projet et l'explorer localement sur votre machine, suivez ces étapes :
@@ -47,7 +47,7 @@ ________________________________________________________________________________
 Welcome to the repository of my Pokémon-themed REST API project! This endeavor was an exciting introduction to the realms of JavaScript and Node.js, guided by Simon Dieny's tutorial on Udemy. The goal was to craft a RESTful API that allows for the exploration, addition, modification, and deletion of Pokémon data, providing a solid foundation for understanding backend development principles with Node.js.
 
 
-## 📘 Project Description
+## 📘 Description
 
 This project is a REST API enabling users to fetch information about Pokémon, add them to a database, modify their details, perform individual searches, and manage user logins. Leveraging Node.js, it serves as an excellent starting point for those keen on learning backend development in a hands-on manner.  
 
@@ -55,8 +55,9 @@ This project is a REST API enabling users to fetch information about Pokémon, a
 ## Features  
 
 Login: User authentication to access specific functionalities.
-Adding and Modifying Pokémon: Allows users to insert new Pokémon into the database and update existing Pokémon data.
-Individual Pokémon Search: Facilitates detailed searches for specific Pokémon.
+Adding, deleting and Modifying Pokémon: Allows users to insert, and delete new Pokémon into the database and update existing Pokémon data.
+Individual Pokémon Search: Facilitates detailed searches for specific Pokémon.  
+Display all the pokemons of the database
 
 
 ## 🛠 Getting Started  
